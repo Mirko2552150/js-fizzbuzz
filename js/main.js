@@ -25,7 +25,23 @@
 // A domani
 //
 // Svolgimento in punti:
-// 1) Stampare N da una a 100
-// 2) Selezionare N multipli di 3 e stampare parola
+// 1) Stampare N da 0 a 100
+// 2) Selezionare N multipli di 3 e stampare parola Fizz
 // 3) Selezionare N multipli di 5 e stampare Buzz
 // 4) Far si che i multipli in comune tra 3 e 5 stampino la parola Fizz-Buzz
+
+
+for (var numero = 1; numero <= 100; numero++) {
+    if (numero %15 == 0) {
+        console.log("fizz-buzz");
+        document.getElementById('multipli-fizz-buzz').innerHTML += numero + " ";
+    } else if (numero %5 == 0) {
+        console.log("buzz");
+        document.getElementById('multipli-buzz').innerHTML += numero + " ";
+    } else if (numero %3 == 0) {
+        console.log("fizz");
+        document.getElementById('multipli-fizz').innerHTML += numero + " ";
+    } else {
+        console.log(numero);
+    }
+}
